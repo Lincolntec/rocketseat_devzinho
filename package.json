@@ -4,8 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js",
-    "start:debug": "node --inspect src/server.js"
+    "dev": "nodemon src/server.js",
+    "queue": "nodemon src/queue.js",
+    "dev:debug": "nodemon --inspect src/server.js",
+    "start": "nodemon src/server.js",
+    "start:debug": "nodemon --inspect src/server.js"
   },
   "dependencies": {
     "@sentry/node": "5.7.1",
